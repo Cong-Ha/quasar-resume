@@ -47,7 +47,8 @@ export default defineConfig((/* ctx */) => {
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      // publicPath: '/',
+      // GitHub Pages deployment - use /quasar-resume/ for production, / for development
+      publicPath: process.env.NODE_ENV === 'production' ? '/quasar-resume/' : '/',
       // analyze: true,
       // env: {},
       // rawDefine: {}
