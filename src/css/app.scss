@@ -1,1 +1,100 @@
 // app global css in SCSS form
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+// Global font styles
+* {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+// Custom font classes
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+// Custom typography classes
+.text-display {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.text-hero {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.text-large {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+// Letter spacing utilities
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.tracking-normal {
+  letter-spacing: 0;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+// Custom margin utilities
+.ml-xs {
+  margin-left: 0.5rem; /* 8px */
+}
+
+.ml-sm {
+  margin-left: 1rem; /* 16px */
+}
+
+.ml-md {
+  margin-left: 1.5rem; /* 24px */
+}
+
+.ml-lg {
+  margin-left: 2rem; /* 32px */
+}
+
+.ml-xl {
+  margin-left: 3rem; /* 48px */
+}
+
+// Responsive typography utilities
+.responsive-name {
+  font-size: 1.125rem; /* 18px for mobile */
+  
+  @media (min-width: 600px) {
+    font-size: 1.25rem; /* 20px for small tablets */
+  }
+  
+  @media (min-width: 768px) {
+    font-size: 1.5rem; /* 24px for tablets */
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: 2rem; /* 32px for desktop */
+  }
+}
+
+// Note: Background image is now handled in MainLayout.vue component
