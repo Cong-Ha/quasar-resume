@@ -14,7 +14,7 @@
     "build": "quasar build",
     "build:github": "NODE_ENV=production quasar build",
     "predeploy": "npm run build:github",
-    "deploy": "gh-pages -d dist/spa",
+    "deploy": "gh-pages -d dist/spa --dotfiles",
     "postinstall": "quasar prepare"
   },
   "dependencies": {
